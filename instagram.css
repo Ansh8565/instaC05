@@ -1,0 +1,305 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+.wrapper{
+    width: 100%;
+    position: relative;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.instacontainer{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 20%;
+    background-color: #FFFFFF;
+    position: fixed;
+}
+.instagramlogo{
+    height: 10vh;
+    width: 100%;
+    padding-left: 20px;
+
+    display: flex;
+    align-items: center;
+
+}
+.instagramlogo img{
+    height: 150px;
+    object-fit: cover;
+}
+.profile{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+
+}
+.profile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+}
+.profile h4{
+    font-size: 22px;
+}
+.profile p{
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.followercontainer{
+    height: 3vh;
+    width: 100%;
+ 
+    display: flex;
+}
+.followercontent{
+    height: 3vh;
+    width: 100%;
+    margin-bottom:10px ;
+    display: flex;
+}
+.followercontent .fol{
+    font-weight: 400;
+    border: none;
+}
+
+.fol{
+    height: 100%;
+    width: calc(100%/3);
+
+    border-left: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.username {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: start;
+justify-content: center;
+    flex-direction: column;
+    padding-left: 26px ;
+}
+.right{
+    height: 100%;
+    width: 80%;
+    background-color: #F6F6F6;
+    position: fixed;
+    right: 0;
+    overflow: hidden;
+}
+.topnav{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+    display: flex;
+    top: 0;
+
+}
+.nav{
+    height: 100%;
+    width: calc(80%/2);
+}
+.topnavleft{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: #000;
+
+}
+
+.topnavleft input{
+   width: 400px;
+   padding: 10px 20px;
+   border-radius: 50px;
+   border: none;
+   background-color: #F6F6F6;
+   font-size: 18px;
+}
+.topnavleft input:active{
+    border: none;
+}
+.topnavright{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding-right: 20px;
+}
+.topnavright i {
+    font-size: 20px;
+}
+.topnavright button {
+    padding: 10px 20px;
+    background-color: blue;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+}
+.bottomnav{
+    width: 100%;
+    position: fixed;
+    top: 10%;
+    padding-left: 20px;
+    z-index: 99999;
+ 
+}
+.bottomnav h4{
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 20px;
+
+}
+.storiescontainer{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.storycontainer{
+    height: 100%;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#highlights{
+   margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+}
+.sc{
+    padding-left: 20px;
+}
+.circle{
+    height: 50px;
+    width: 50px;
+    background-color: aquamarine;
+    border-radius: 50px;
+    margin-bottom: 3px;
+    border: 2px solid #E40976;
+}
+.circle img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50px;
+}
+.bottomsection{
+    min-height: 25vh;
+    width: 100%;
+    margin-top: 20px;
+    padding-left:20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.bottomcontent{
+    display: flex;
+    gap:25px;
+    height: 5vh;
+    width: 100%;
+}
+.bottomcontent i{
+    font-size: 23px;
+}
+.logout{
+    margin-top: 60px;
+}
+.feedsection{
+    height: calc(100vh - 22vh);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-top:20px;
+}
+.feedsection p{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.post-container{
+    height: 600px;
+    overflow: auto;
+    width: 600px;
+    position: fixed;
+    right: 20%;
+    scrollbar-width: none;
+}
+.cir{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+.pfp{
+    display: flex;
+    height: 5vh;
+    width: 100%;
+
+    align-items: center;
+  
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.pfp img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    border-radius: 50px;
+}
+.pfp h1{
+    font-size: 20px;
+}
+.post-image{
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.post-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.engagement-section{
+    height: 5vh;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-size: 25px;
+}
+.posts{
+    margin-bottom: 5vh;
+}
